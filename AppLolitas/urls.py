@@ -17,3 +17,6 @@ urlpatterns = [
     path ('iniciar_sesion/', iniciar_sesion, name="iniciar_sesion"),
     path ('logout/', cerrar_sesion, name="cerrar_sesion"),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
